@@ -1,5 +1,5 @@
 import DashboardPage from "./Dashboard";
 
-export default function page() {
+export default function Dashboard() {
   return <DashboardPage />
 }

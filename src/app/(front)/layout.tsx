@@ -1,4 +1,9 @@
 // Front Layout
+
+import Footer from "@/components/front/Footer"
+import Navbar from "@/components/front/Navbar"
+import PrelineScript from "@/components/PrelineScript"
+
 export default function FrontLayout({
   children,
 }: Readonly<{
@@ -7,10 +12,11 @@ export default function FrontLayout({
   return (
     <html lang="en">
       <body>
-        <nav>Header Front</nav>
+        <Navbar />
         {children}
-        <footer>Footer Front</footer>
+        <Footer />
       </body>
+      <PrelineScript />
     </html>
   )
 }
